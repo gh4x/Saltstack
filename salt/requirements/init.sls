@@ -7,7 +7,7 @@ essential-packages:
       - git
       - nodejs
       - tmux
-      - ncruses-term
+      - ncurses-term
       - sysstat
       - zsh
       - ntp
