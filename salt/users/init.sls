@@ -45,7 +45,7 @@ vim_runtime_{{name}}:
   git.latest:
     - name: git://github.com/amix/vimrc.git
     - target: {{home}}/.vim_runtime
-    require:
+    - require:
       - user: {{name}}
 
 vimrc_{{name}}:
