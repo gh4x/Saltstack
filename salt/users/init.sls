@@ -36,7 +36,7 @@ users_ssh_auth_{{name}}_{{loop.index0 }}:
   ssh_auth.present:
     - user: {{ name }}
     - name: {{ auth }}
-{% enfor %}
+{% endfor %}
 {% endif %}
 
 {% if user_files.enabled %}
