@@ -4,3 +4,6 @@ base:
     - users
     - ssh
     - logging
+
+  '*Thinkpad':
+    - mysql
