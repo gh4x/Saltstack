@@ -30,7 +30,7 @@ users_{{name}}_user:
       - {{ group }}
       {% endfor %}
 
-{% if 'ssh_auth' in user }
+{% if 'ssh_auth' in user %}
 {% for auth in user['ssh_auth'] %}
 users_ssh_auth_{{name}}_{{loop.index0 }}:
   ssh_auth.present:
