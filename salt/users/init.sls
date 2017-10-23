@@ -26,7 +26,7 @@ users_{{name}}_user:
     - fulname: {{ user['fullname'] }}
     - groups:
       - {{ user_group }}
-      {% for group in user.get('groups', []) %s}
+      {% for group in user.get('groups', []) %}
       - {{ group }}
       {% endfor %}
 
